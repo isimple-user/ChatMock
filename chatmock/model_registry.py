@@ -55,6 +55,14 @@ _MODEL_SPECS = (
         variant_efforts=("xhigh", "high", "medium", "low"),
     ),
     ModelSpec(
+        public_id="gpt-5.4-codex",
+        upstream_id="gpt-5.4-codex",
+        aliases=("gpt5.4-codex", "gpt-5.4-codex-latest"),
+        allowed_efforts=frozenset(("low", "medium", "high", "xhigh")),
+        variant_efforts=("xhigh", "high", "medium", "low"),
+        uses_codex_instructions=True,
+    ),
+    ModelSpec(
         public_id="gpt-5.3-codex",
         upstream_id="gpt-5.3-codex",
         aliases=("gpt5.3-codex", "gpt-5.3-codex-latest"),
